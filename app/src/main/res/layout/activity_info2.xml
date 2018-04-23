@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="colonel.com.shumei.Service1Activity">
+
+    <!-- 头部 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#F4F4F4">
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:id="@+id/back"
+            android:onClick="back"
+            android:background="#f4f4f4"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/now"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:text="录音功能"
+                android:textColor="@color/textSel"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/his"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="音频记录"
+                android:textColor="@color/textNoSel"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/now_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/ButBgPre">
+
+        <ImageView
+            android:id="@+id/info2_1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/info2_1"/>
+
+
+        <Chronometer
+            android:id="@+id/info2_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format="00:00:00"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp">
+            <ImageView
+                android:id="@+id/info2_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/info2_2"/>
+
+            <ImageView
+                android:id="@+id/info2_3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/info2_3"/>
+
+            <ImageView
+                android:id="@+id/info2_4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/info2_4"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/his_content"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/ButBgPre">
+
+        <!-- text -->
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:text="2018年"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="3月31日"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/whiteBg">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/info2_microphone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="责任方语音记录"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="3'21''04'''"
+                android:layout_alignParentRight="true"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="事故地点：西土城路，明光桥路口"
+                android:textColor="#000"
+                android:layout_marginTop="50dp"/>
+
+            <ImageView
+                android:id="@+id/info2_play1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/info2_3"/>
+
+            <ProgressBar
+                android:id="@+id/info2_progress1"
+                android:visibility="gone"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="80dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/bar_bg"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/whiteBg">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/info2_microphone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="协商语音记录1"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="2'1''04'''"
+                android:layout_alignParentRight="true"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="事故地点：西土城路，明光桥路口"
+                android:textColor="#000"
+                android:layout_marginTop="50dp"/>
+
+            <ImageView
+                android:id="@+id/info2_play2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/info2_3"/>
+
+            <ProgressBar
+                android:id="@+id/info2_progress2"
+                android:visibility="gone"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="80dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/bar_bg"/>
+        </RelativeLayout>
+
+        <!-- text -->
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:text="2018年"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="3月31日"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/whiteBg">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/info2_microphone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="责任方语音记录"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="3'21''04'''"
+                android:layout_alignParentRight="true"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="事故地点：西土城路，明光桥路口"
+                android:textColor="#000"
+                android:layout_marginTop="50dp"/>
+
+
+            <ImageView
+                android:id="@+id/info2_play3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/info2_3"/>
+
+            <ProgressBar
+                android:id="@+id/info2_progress3"
+                android:visibility="gone"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="80dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/bar_bg"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

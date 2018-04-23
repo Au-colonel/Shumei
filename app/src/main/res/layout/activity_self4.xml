@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="colonel.com.shumei.Self1Activity">
+
+    <!-- 头部 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#F4F4F4">
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:id="@+id/back"
+            android:onClick="back"
+            android:background="#f4f4f4"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:textSize="18sp"
+           android:layout_marginLeft="115dp"
+           android:text="帮助"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/self_4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:text="常见问题"/>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:id="@+id/self_searcher"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/self_search"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+        <EditText
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:inputType="text"
+            android:background="@drawable/radius_shape"/>
+
+
+        <View android:layout_height="1px"
+            android:background="#cccccc"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:text="1、XXXXXXXXXX怎么办"/>
+
+        <View android:layout_height="1px"
+            android:background="#cccccc"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/self_arrow"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:text="2、XXXXXXXXXX怎么办"/>
+
+        <View android:layout_height="1px"
+            android:background="#cccccc"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/self_arrow"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:text="3、XXXXXXXXXX怎么办"/>
+
+        <View android:layout_height="1px"
+            android:background="#cccccc"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/self_arrow"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/topBg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="160dp"
+            android:text="服务"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/item1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/whiteBg"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="45dp"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:text="保险理赔"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="75dp"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:text="Settlement of insurance claim"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="115dp"
+                android:textSize="12sp"
+                android:text="一键联系投保公司，快速处理理赔事宜"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/service_1"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/item2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/ButBg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="45dp"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:text="清障救援"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="75dp"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:text="Rescue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="115dp"
+                android:textSize="12sp"
+                android:text="专业救援服务商，一键清障保畅通"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/service_2"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/item3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/whiteBg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="45dp"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:text="4s店维修"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="75dp"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:text="4S automobile shop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="115dp"
+                android:textSize="12sp"
+                android:text="从过去吸取教训，保护您的自身安全"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/service_3"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

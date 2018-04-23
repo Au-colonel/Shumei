@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="colonel.com.shumei.Self1Activity">
+
+    <!-- 头部 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#F4F4F4">
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:id="@+id/back"
+            android:onClick="back"
+            android:background="#f4f4f4"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:textSize="18sp"
+           android:layout_marginLeft="100dp"
+           android:text="添加车辆"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/self_2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:text="机动车信息"/>
+
+        <View android:layout_height="1px"
+            android:background="#cccccc"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textColor="#ff0000"
+            android:text="*"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:text="机动车类型"/>
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="165dp"
+            android:layout_height="30dp"
+            android:inputType="text"
+            android:hint="请选择机动车类型"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/self_arrow_down"
+            android:background="@drawable/radius_shape_tv_white"/>
+
+        <View android:layout_height="1px"
+            android:background="#cccccc"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textColor="#ff0000"
+            android:text="*"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:text="机动车号牌"/>
+
+        <ImageView
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/self_jing"/>
+
+        <EditText
+            android:layout_marginLeft="215dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:inputType="text"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/radius_shape"/>
+
+        <View android:layout_height="1px"
+            android:background="#cccccc"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textColor="#ff0000"
+            android:text="*"/>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:text="发动机号"/>
+
+        <ImageView
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/self_wen"/>
+
+        <EditText
+            android:layout_marginLeft="215dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:inputType="text"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/radius_shape"/>
+
+        <View android:layout_height="1px"
+            android:background="#cccccc"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/add_car"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="40dp"
+        android:text="添加"
+        android:background="@drawable/radius_shape_but_blue"
+        />
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1、在输入的过程中请仔细区分D和0，Z和2,1、i和L等易混淆的字符。"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2、如遇*、-、_等特殊字符，请在输入法中选择半角输入，并区分中划线和下划线。"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3、如遇空格请使用“+”替代。"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4、请注意区分车架号和发动机号。"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5、机动车车牌号后5位中的0位阿拉伯数字0，并非英文字母“O”。"/>
+
+
+</LinearLayout>

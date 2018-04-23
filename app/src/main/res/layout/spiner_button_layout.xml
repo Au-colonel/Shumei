@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_alignParentRight="true"
+    android:orientation="horizontal"
+    android:background="#A4f4f4f4">
+
+    <RelativeLayout
+        android:id="@+id/plus_but"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/radius_shape_but_blue">
+
+        <View android:layout_height="3dp"
+            android:background="#ffffff"
+            android:layout_width="30dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="10dp"/>
+
+        <View android:layout_width="3dp"
+            android:background="#ffffff"
+            android:layout_height="30dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="10dp"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

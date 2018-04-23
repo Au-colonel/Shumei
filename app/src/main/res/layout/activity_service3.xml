@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="colonel.com.shumei.Service1Activity">
+
+    <!-- 头部 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#F4F4F4">
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:id="@+id/back"
+            android:onClick="back"
+            android:background="#f4f4f4"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/now"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:text="当前进度"
+                android:textColor="@color/textSel"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/his"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="历史记录"
+                android:textColor="@color/textNoSel"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:id="@+id/add"
+            android:background="#f4f4f4"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/service_add"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/now_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/service3_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:text="资料填写"/>
+
+            <View android:layout_height="1px"
+                android:background="#cccccc"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="60dp"
+                android:layout_alignParentBottom="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textColor="#ff0000"
+                android:text="*"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:text="选择车辆"/>
+
+            <TextView
+                android:id="@+id/tv_value1"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="175dp"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:hint="请选择理赔车辆"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/self_arrow_down"
+                android:background="@drawable/radius_shape_tv_white"/>
+
+            <View android:layout_height="1px"
+                android:background="#cccccc"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="60dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textColor="#ff0000"
+                android:text="*"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:text="车型"/>
+
+            <TextView
+                android:id="@+id/tv_value2"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="175dp"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:hint="请选择您的车型"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/self_arrow_down"
+                android:background="@drawable/radius_shape_tv_white"/>
+
+            <View android:layout_height="1px"
+                android:background="#cccccc"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="60dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textColor="#ff0000"
+                android:text="*"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:text="地址"/>
+
+            <EditText
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="175dp"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:textSize="13sp"
+                android:hint="请输入您的当前地址"
+                android:gravity="center_vertical"
+                android:background="@drawable/radius_shape"/>
+
+            <View android:layout_height="1px"
+                android:background="#cccccc"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="60dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textColor="#ff0000"
+                android:text="*"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:text="现场图片"/>
+
+            <TextView
+                android:id="@+id/tv_value5"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="175dp"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:hint="请上传现场图片"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/self_arrow_down"
+                android:background="@drawable/radius_shape_tv_white"/>
+
+            <View android:layout_height="1px"
+                android:background="#cccccc"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="60dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            android:text="立即维修"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/radius_shape_but_blue"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/his_content"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/item1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#ffffff">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/self_2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:text="京A XXXXX"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="40dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text="维修车辆费用 300.00元"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="65dp"
+                android:textSize="18sp"
+                android:text="北京市海淀区北太平庄"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="65dp"
+                android:textSize="18sp"
+                android:text="2018-02-02"/>
+
+            <View android:layout_height="1px"
+                android:background="#cccccc"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="60dp"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/self_arrow"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/now_content_p"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/service3_chat"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="colonel.com.shumei.Self1Activity">
+
+    <!-- 头部 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#F4F4F4">
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:id="@+id/back"
+            android:onClick="back"
+            android:background="#f4f4f4"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:textSize="18sp"
+           android:layout_marginLeft="100dp"
+           android:text="违章查询"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/self_3" />
+
+        <!--60dp-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text="3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:textSize="16sp"
+                android:text="违章"/>
+
+            <View android:layout_height="16dp"
+                android:background="#cccccc"
+                android:layout_marginTop="20dp"
+                android:layout_width="1px"
+                android:layout_marginLeft="60dp" />
+
+        </RelativeLayout>
+
+        <!--100dp-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text="700.00"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="18dp"
+                android:textSize="16sp"
+                android:text="罚款"/>
+
+            <View android:layout_height="16dp"
+                android:background="#cccccc"
+                android:layout_marginTop="20dp"
+                android:layout_width="1px"
+                android:layout_marginLeft="100dp" />
+
+        </RelativeLayout>
+
+        <!--60dp-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text="8"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:textSize="16sp"
+                android:text="扣分"/>
+
+
+        </RelativeLayout>
+
+
+
+        <View android:layout_height="1px"
+            android:background="#cccccc"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/self_2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:text="京A XXXXX"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:textSize="18sp"
+            android:textColor="#ff0000"
+            android:text="闯红灯"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="40dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="罚款200.00 扣3分"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="65dp"
+            android:textSize="18sp"
+            android:text="北京市海淀区西土城路"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="65dp"
+            android:textSize="18sp"
+            android:text="2018-03-02"/>
+
+        <View android:layout_height="1px"
+            android:background="#cccccc"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/self_arrow"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/self_2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:text="京A XXXXX"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:textSize="18sp"
+            android:textColor="#ff0000"
+            android:text="压线"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="40dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="罚款200.00 扣3分"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="65dp"
+            android:textSize="18sp"
+            android:text="北京市昌平区百沙路"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="65dp"
+            android:textSize="18sp"
+            android:text="2018-02-15"/>
+
+        <View android:layout_height="1px"
+            android:background="#cccccc"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/self_arrow"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/self_2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:text="京B XXXXX"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:textSize="18sp"
+            android:textColor="#ff0000"
+            android:text="逆行"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="40dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="罚款200.00 扣2分"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="65dp"
+            android:textSize="18sp"
+            android:text="北京市海淀区北太平庄"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="65dp"
+            android:textSize="18sp"
+            android:text="2018-02-02"/>
+
+        <View android:layout_height="1px"
+            android:background="#cccccc"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/self_arrow"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="40dp"
+        android:text="缴费"
+        android:background="@drawable/radius_shape_but_blue"
+        />
+
+
+</LinearLayout>
